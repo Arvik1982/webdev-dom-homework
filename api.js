@@ -3,6 +3,7 @@ export let userName;
 import { comments } from "./main.js";
 import _ from 'lodash'
 
+
 export function getFetch() {
   return fetch("https://wedev-api.sky.pro/api/v2/arseny-kulikov/comments", {
     method: "GET",
@@ -10,7 +11,7 @@ export function getFetch() {
   }).catch((error) => {
     throw new Error(`Кажется, у вас сломался интернет, попробуйте позже...`);
   });
-  
+
 }
 export function postFetch() {
   const addFormButtonIdNew = document.getElementById(
