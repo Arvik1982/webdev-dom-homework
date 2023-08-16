@@ -10,6 +10,7 @@ export function getFetch() {
   }).catch((error) => {
     throw new Error(`Кажется, у вас сломался интернет, попробуйте позже...`);
   });
+  
 }
 export function postFetch() {
   const addFormButtonIdNew = document.getElementById(
